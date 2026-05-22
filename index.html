@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stash — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    nav {
+      border-bottom: 0.5px solid rgba(0,0,0,0.12);
+      padding: 0 2rem;
+      height: 52px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo-mark {
+      width: 22px;
+      height: 22px;
+      background: #1a1a1a;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-mark span {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 6rem;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: #a0a0a0;
+      margin-bottom: 3rem;
+    }
+
+    .summary {
+      background: #f5f4ef;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .summary p {
+      font-size: 13px;
+      line-height: 1.65;
+      color: #1a1a1a;
+    }
+
+    .summary strong {
+      font-weight: 600;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.1px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #3a3a3a;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #3a3a3a;
+      margin-bottom: 0.2rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 0.5px solid rgba(0,0,0,0.12);
+      margin: 2.5rem 0;
+    }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    footer {
+      border-top: 0.5px solid rgba(0,0,0,0.12);
+      padding: 1.25rem 2rem;
+      font-size: 11px;
+      color: #a0a0a0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="#">
+      <div class="logo-mark"><span>S</span></div>
+      <span class="logo-text">stash</span>
+    </a>
+  </nav>
+
+  <main>
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <div class="summary">
+      <p><strong>Short version:</strong> Stash stores your saved products locally on your device. Nothing is sent to any server. We don't collect, share, or sell any data about you.</p>
+    </div>
+
+    <section>
+      <h2>What Stash stores</h2>
+      <p>When you save a product, Stash stores the following information locally on your device using Chrome's built-in storage:</p>
+      <ul>
+        <li>Product title, price, and URL</li>
+        <li>Product image URL</li>
+        <li>Variant information (sizes, colours)</li>
+        <li>Collections and notes you create</li>
+        <li>Your price alert and tracking preferences</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Where your data goes</h2>
+      <p>Nowhere. All data is stored exclusively on your device using <code>chrome.storage.local</code>. It is never transmitted to any external server, never shared with third parties, and is not accessible to anyone other than you.</p>
+    </section>
+
+    <section>
+      <h2>What Stash reads</h2>
+      <p>Stash reads page content (product title, price, image, variants) only when you open the extension on a product page. It does not monitor your browsing history, track which pages you visit, or read pages in the background.</p>
+    </section>
+
+    <section>
+      <h2>Price checking</h2>
+      <p>If you enable price alerts, Stash periodically fetches the product pages you have already saved to check for price changes. These requests go directly from your browser to the store's website — there is no intermediary server. No data about the request is logged or stored outside your device.</p>
+    </section>
+
+    <section>
+      <h2>Analytics & tracking</h2>
+      <p>Stash contains no analytics, crash reporting, advertising SDKs, or any form of third-party tracking.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes in a meaningful way, the updated date at the top of this page will reflect that. We won't reduce your privacy rights without clear notice.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions or concerns? Reach out at <a href="mailto:nemibanigo@gmail.com">nemibanigo@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Stash</span>
+    <span>All data stays on your device.</span>
+  </footer>
+
+</body>
+</html>
